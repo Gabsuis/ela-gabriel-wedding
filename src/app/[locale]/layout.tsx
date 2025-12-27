@@ -5,11 +5,36 @@ import { notFound } from 'next/navigation';
 import { locales } from '../../../i18n';
 import '@/styles/globals.css';
 
+const siteUrl = 'https://ela-gabriel-wedding.vercel.app';
+
 export const metadata: Metadata = {
   title: 'Ela & Gabriel - Wedding 2025',
-  description: 'Join us to celebrate our love - July 2025',
+  description: 'Join us to celebrate our love in Israel - July 2025. Civil ceremony in France, Huppa in Jaffa by the Mediterranean Sea.',
   icons: {
     icon: '/favicon.ico',
+  },
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    title: 'Ela & Gabriel - Wedding 2025',
+    description: 'Join us to celebrate our love in Israel - July 2025',
+    url: siteUrl,
+    siteName: 'Ela & Gabriel Wedding',
+    images: [
+      {
+        url: '/engagement.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Ela & Gabriel - Save the Date',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ela & Gabriel - Wedding 2025',
+    description: 'Join us to celebrate our love in Israel - July 2025',
+    images: ['/engagement.jpg'],
   },
 };
 

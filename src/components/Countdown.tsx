@@ -115,18 +115,10 @@ export default function Countdown() {
             >
               <div className="card bg-white/80 backdrop-blur-sm shadow-xl border border-[#FCF0EA] hover:shadow-2xl transition-all duration-300">
                 <div className="card-body items-center p-6">
-                  {/* Number with flip animation */}
-                  <motion.div
-                    key={block.value}
-                    initial={{ rotateX: -90, opacity: 0 }}
-                    animate={{ rotateX: 0, opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                    className="relative"
-                  >
-                    <span className="countdown font-serif text-5xl md:text-6xl lg:text-7xl text-[#2A4052]">
-                      <span style={{ '--value': block.value } as React.CSSProperties}></span>
-                    </span>
-                  </motion.div>
+                  {/* Number */}
+                  <span className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#2A4052] tabular-nums">
+                    {String(block.value).padStart(2, '0')}
+                  </span>
 
                   {/* Label */}
                   <span className="text-[#E8A87C] font-medium tracking-widest uppercase text-xs mt-2">
