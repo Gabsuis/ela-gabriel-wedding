@@ -42,23 +42,6 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="mb-6"
-        >
-          <Image
-            src="/logo.png"
-            alt="Ela & Gabriel Logo"
-            width={180}
-            height={180}
-            className="mx-auto"
-            priority
-          />
-        </motion.div>
-
         {/* Engagement Photo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}

@@ -32,21 +32,21 @@
     "oriental": {
       "title": "Oriental Party",
       "date": "July 24th, 2025",
-      "time": "Evening",
+      "time": "12:00 PM",
       "location": "Bait Andromeda, Yafo",
       "description": "An enchanting evening of celebration with Middle Eastern flavors and music"
     },
     "kiddush": {
       "title": "Shabbat Kiddush",
       "date": "July 25th, 2025",
-      "time": "After services",
+      "time": "9:00 AM",
       "location": "Synagogue (TBD)",
       "description": "A meaningful Shabbat celebration with family and friends"
     },
     "huppa": {
       "title": "Huppa Ceremony",
       "date": "July 26th, 2025",
-      "time": "Evening",
+      "time": "6:00 PM",
       "location": "Beit Al Hayam, Yafo",
       "description": "Our Jewish wedding ceremony by the beautiful Mediterranean Sea"
     }
@@ -74,8 +74,8 @@
     }
   },
   "countdown": {
-    "title": "Counting Down to Forever",
-    "subtitle": "Until we say 'I Do'",
+    "title": "Countdown to the Huppa",
+    "subtitle": "July 26th, 2025 at 6:00 PM",
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",

@@ -30,23 +30,23 @@
       "description": "Notre cérémonie civile officielle suivie d'un cocktail chez les Crehange"
     },
     "oriental": {
-      "title": "Soirée Orientale",
+      "title": "Fête Orientale",
       "date": "24 Juillet 2025",
-      "time": "En soirée",
+      "time": "12h00",
       "location": "Bait Andromeda, Yafo",
       "description": "Une soirée enchanteresse de célébration aux saveurs et musiques orientales"
     },
     "kiddush": {
       "title": "Kiddoush de Shabbat",
       "date": "25 Juillet 2025",
-      "time": "Après l'office",
+      "time": "09h00",
       "location": "Synagogue (à déterminer)",
       "description": "Une célébration de Shabbat significative avec famille et amis"
     },
     "huppa": {
       "title": "Cérémonie de la Houppa",
       "date": "26 Juillet 2025",
-      "time": "En soirée",
+      "time": "18h00",
       "location": "Beit Al Hayam, Yafo",
       "description": "Notre mariage juif au bord de la magnifique mer Méditerranée"
     }
@@ -74,8 +74,8 @@
     }
   },
   "countdown": {
-    "title": "Compte à rebours vers l'éternité",
-    "subtitle": "Avant de dire 'Oui'",
+    "title": "Compte à rebours jusqu'à la Houppa",
+    "subtitle": "26 Juillet 2025 à 18h00",
     "days": "Jours",
     "hours": "Heures",
     "minutes": "Minutes",

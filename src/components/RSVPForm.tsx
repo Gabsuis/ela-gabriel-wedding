@@ -272,18 +272,7 @@ export default function RSVPForm() {
             </div>
           </div>
 
-          {/* Dietary restrictions */}
-          <div className="mb-6">
-            <input
-              type="text"
-              name="dietary"
-              value={formData.dietary}
-              onChange={handleInputChange}
-              placeholder={t('form.dietaryPlaceholder')}
-              className="input input-bordered w-full bg-white/50 border-[#F9DDD0] focus:border-[#E8A87C] text-[#2A4052] placeholder:text-[#7BA3C4]"
-            />
-          </div>
-
+          
           {/* Message */}
           <div className="mb-8">
             <textarea

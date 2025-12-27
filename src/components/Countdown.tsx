@@ -14,7 +14,7 @@ interface TimeLeft {
 
 export default function Countdown() {
   const t = useTranslations('countdown');
-  const weddingDate = new Date('2025-07-26T17:00:00');
+  const huppaDate = new Date('2025-07-26T18:00:00');
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
@@ -28,7 +28,7 @@ export default function Countdown() {
     setMounted(true);
 
     const calculateTimeLeft = () => {
-      const difference = weddingDate.getTime() - new Date().getTime();
+      const difference = huppaDate.getTime() - new Date().getTime();
 
       if (difference > 0) {
         setTimeLeft({
