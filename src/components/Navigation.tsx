@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { Menu, X, Globe } from 'lucide-react';
 import Image from 'next/image';
 
@@ -20,7 +21,8 @@ export default function Navigation() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+
+  const isHomePage = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,22 +35,30 @@ export default function Navigation() {
   const switchLanguage = (newLocale: string) => {
     const currentPath = pathname.replace(`/${locale}`, '') || '/';
     router.push(`/${newLocale}${currentPath}`);
-    setIsLangMenuOpen(false);
   };
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleNavClick = (item: { type: 'scroll' | 'link'; target: string }) => {
     setIsMobileMenuOpen(false);
+
+    if (item.type === 'link') {
+      router.push(`/${locale}${item.target}`);
+    } else if (item.type === 'scroll') {
+      if (isHomePage) {
+        const element = document.getElementById(item.target);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        router.push(`/${locale}/#${item.target}`);
+      }
+    }
   };
 
   const navItems = [
-    { label: t('home'), id: 'hero' },
-    { label: t('story'), id: 'story' },
-    { label: t('events'), id: 'events' },
-    { label: t('rsvp'), id: 'rsvp' },
+    { label: t('home'), type: 'scroll' as const, target: 'hero' },
+    { label: t('story'), type: 'link' as const, target: '/our-story' },
+    { label: t('events'), type: 'scroll' as const, target: 'events' },
+    { label: t('rsvp'), type: 'scroll' as const, target: 'rsvp' },
   ];
 
   return (
@@ -65,27 +75,28 @@ export default function Navigation() {
       <nav className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <motion.button
-            onClick={() => scrollToSection('hero')}
-            className="flex items-center gap-2"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Image
-              src="/logo.png"
-              alt="E & G"
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
-          </motion.button>
+          <Link href={`/${locale}`}>
+            <motion.div
+              className="flex items-center gap-2 cursor-pointer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Image
+                src="/logo.png"
+                alt="E & G"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+            </motion.div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <motion.button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                key={item.target}
+                onClick={() => handleNavClick(item)}
                 className="text-[#385670] hover:text-[#E8A87C] transition-colors font-medium"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -171,11 +182,11 @@ export default function Navigation() {
               <div className="py-4 space-y-2">
                 {navItems.map((item, index) => (
                   <motion.button
-                    key={item.id}
+                    key={item.target}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    onClick={() => scrollToSection(item.id)}
+                    onClick={() => handleNavClick(item)}
                     className="block w-full text-left py-3 px-4 rounded-lg text-[#385670] hover:bg-[#FCF0EA] transition-colors"
                   >
                     {item.label}

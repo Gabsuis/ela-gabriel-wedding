@@ -6,8 +6,6 @@ import { useRef } from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import Countdown from '@/components/Countdown';
-import OurStory from '@/components/OurStory';
-import Gallery from '@/components/Gallery';
 import Events from '@/components/Events';
 import RSVPForm from '@/components/RSVPForm';
 import Footer from '@/components/Footer';
@@ -54,10 +52,6 @@ export default function HomePage() {
       <Hero />
 
       <Countdown />
-
-      <OurStory />
-
-      <Gallery />
 
       <Events />
 
