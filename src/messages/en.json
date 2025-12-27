@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Ela & Gabriel - Wedding",
+    "description": "Join us to celebrate our love"
+  },
+  "nav": {
+    "home": "Home",
+    "story": "Our Story",
+    "events": "Events",
+    "rsvp": "RSVP"
+  },
+  "hero": {
+    "subtitle": "We're getting married!",
+    "date": "July 2025",
+    "cta": "RSVP Now"
+  },
+  "story": {
+    "title": "Our Story",
+    "content": "We met in Israel during our Massa Program. What started as a beautiful friendship blossomed into a love story that led us to make Aliya together. Now, we're excited to begin our forever journey as husband and wife.",
+    "tagline": "From Massa to Marriage"
+  },
+  "events": {
+    "title": "Our Celebrations",
+    "subtitle": "Four beautiful moments to share with you",
+    "mairie": {
+      "title": "Civil Ceremony",
+      "date": "July 6th, 2025",
+      "time": "3:00 PM",
+      "location": "Mairie de Saint-Cloud",
+      "description": "Our official civil ceremony followed by a cocktail party at the Crehange residence"
+    },
+    "oriental": {
+      "title": "Oriental Party",
+      "date": "July 24th, 2025",
+      "time": "Evening",
+      "location": "Bait Andromeda, Yafo",
+      "description": "An enchanting evening of celebration with Middle Eastern flavors and music"
+    },
+    "kiddush": {
+      "title": "Shabbat Kiddush",
+      "date": "July 25th, 2025",
+      "time": "After services",
+      "location": "Synagogue (TBD)",
+      "description": "A meaningful Shabbat celebration with family and friends"
+    },
+    "huppa": {
+      "title": "Huppa Ceremony",
+      "date": "July 26th, 2025",
+      "time": "Evening",
+      "location": "Beit Al Hayam, Yafo",
+      "description": "Our Jewish wedding ceremony by the beautiful Mediterranean Sea"
+    }
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "We can't wait to celebrate with you",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "guests": "Number of Guests",
+      "dietary": "Dietary Restrictions",
+      "dietaryPlaceholder": "Kosher, vegetarian, allergies...",
+      "message": "Message for the Couple",
+      "messagePlaceholder": "Share your wishes...",
+      "attending": "Attending",
+      "notAttending": "Unable to Attend",
+      "submit": "Send RSVP",
+      "success": "Thank you! Your RSVP has been received.",
+      "error": "Something went wrong. Please try again."
+    },
+    "events": {
+      "selectAll": "Select your attendance for each event"
+    }
+  },
+  "countdown": {
+    "title": "Counting Down to Forever",
+    "subtitle": "Until we say 'I Do'",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "gallery": {
+    "title": "Our Moments",
+    "subtitle": "A glimpse into our journey"
+  },
+  "footer": {
+    "madeWith": "Made with love",
+    "hashtag": "#ElaAndGabriel2025"
+  }
+}

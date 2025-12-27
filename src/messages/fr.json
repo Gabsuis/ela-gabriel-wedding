@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "title": "Ela & Gabriel - Mariage",
+    "description": "Rejoignez-nous pour célébrer notre amour"
+  },
+  "nav": {
+    "home": "Accueil",
+    "story": "Notre Histoire",
+    "events": "Événements",
+    "rsvp": "RSVP"
+  },
+  "hero": {
+    "subtitle": "Nous nous marions !",
+    "date": "Juillet 2025",
+    "cta": "Confirmer ma présence"
+  },
+  "story": {
+    "title": "Notre Histoire",
+    "content": "Nous nous sommes rencontrés en Israël pendant notre programme Massa. Ce qui a commencé comme une belle amitié s'est transformé en une histoire d'amour qui nous a conduits à faire notre Aliya ensemble. Maintenant, nous sommes impatients de commencer notre voyage éternel en tant que mari et femme.",
+    "tagline": "De Massa au Mariage"
+  },
+  "events": {
+    "title": "Nos Célébrations",
+    "subtitle": "Quatre beaux moments à partager avec vous",
+    "mairie": {
+      "title": "Cérémonie Civile",
+      "date": "6 Juillet 2025",
+      "time": "15h00",
+      "location": "Mairie de Saint-Cloud",
+      "description": "Notre cérémonie civile officielle suivie d'un cocktail chez les Crehange"
+    },
+    "oriental": {
+      "title": "Soirée Orientale",
+      "date": "24 Juillet 2025",
+      "time": "En soirée",
+      "location": "Bait Andromeda, Yafo",
+      "description": "Une soirée enchanteresse de célébration aux saveurs et musiques orientales"
+    },
+    "kiddush": {
+      "title": "Kiddoush de Shabbat",
+      "date": "25 Juillet 2025",
+      "time": "Après l'office",
+      "location": "Synagogue (à déterminer)",
+      "description": "Une célébration de Shabbat significative avec famille et amis"
+    },
+    "huppa": {
+      "title": "Cérémonie de la Houppa",
+      "date": "26 Juillet 2025",
+      "time": "En soirée",
+      "location": "Beit Al Hayam, Yafo",
+      "description": "Notre mariage juif au bord de la magnifique mer Méditerranée"
+    }
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Nous avons hâte de célébrer avec vous",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse email",
+      "phone": "Numéro de téléphone",
+      "guests": "Nombre d'invités",
+      "dietary": "Restrictions alimentaires",
+      "dietaryPlaceholder": "Casher, végétarien, allergies...",
+      "message": "Message pour les mariés",
+      "messagePlaceholder": "Partagez vos vœux...",
+      "attending": "Présent(e)",
+      "notAttending": "Absent(e)",
+      "submit": "Envoyer RSVP",
+      "success": "Merci ! Votre RSVP a bien été reçu.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "events": {
+      "selectAll": "Indiquez votre présence pour chaque événement"
+    }
+  },
+  "countdown": {
+    "title": "Compte à rebours vers l'éternité",
+    "subtitle": "Avant de dire 'Oui'",
+    "days": "Jours",
+    "hours": "Heures",
+    "minutes": "Minutes",
+    "seconds": "Secondes"
+  },
+  "gallery": {
+    "title": "Nos Moments",
+    "subtitle": "Un aperçu de notre parcours"
+  },
+  "footer": {
+    "madeWith": "Fait avec amour",
+    "hashtag": "#ElaEtGabriel2025"
+  }
+}
